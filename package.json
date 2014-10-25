@@ -1,0 +1,7 @@
+{
+  "name": "Mint-Chip",
+  "version": "0.1.13",
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  }
+}
