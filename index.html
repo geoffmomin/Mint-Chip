@@ -309,6 +309,7 @@
 		}
 
 		nav input {
+			height: 36px; /* IE 11 */
 			color: {color:Accent 2};			
 			font-family: '{text:Google Accent Font}', 'Trebuchet MS', sans-serif;
 			background-color: {color:Accent 2};
@@ -324,6 +325,10 @@
 
 		nav input:focus {
 			background-color: {color:Hover Link 1};
+		}
+
+		.placeholder {
+			color: {color:Accent 1};
 		}
 
 		aside h4 {
@@ -569,7 +574,7 @@
 				<ul class="accent-font">
 					<li id="search-box">
 						<form action="/search" method="get">
-						<input type="text" name="q" value="{SearchQuery}" placeholder="{lang:Search}..." />
+						<input type="text" name="q" value="{SearchQuery}" class="placeholder" placeholder="{lang:Search}..." />
 						</form>
 					</li>
 					{block:IfShowPages}
