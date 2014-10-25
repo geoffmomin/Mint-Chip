@@ -100,7 +100,7 @@
 	<link href='http://fonts.googleapis.com/css?family={text:Google Accent Font}:300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family={text:Google Header Font}:300' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" id="contact-form-7-css" href="http://static.tumblr.com/4dhjtvt/h32ne0sal/style.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="contact-form-7-css" href="http://static.tumblr.com/4dhjtvt/LVpne0ta7/style.min.css" type="text/css" media="all">
 
 	<style type="text/css">
 
@@ -190,6 +190,55 @@
 			}
 
 		{/block:IfLeftSidebar}
+
+		@media only screen and (min-width: 100px) and (max-width: 1140px) {
+
+			.site-content {
+				margin: 0 auto;
+				padding: 0;
+				float: none;
+			}
+
+			.sidebar-wrap {
+				max-width: 700px;
+				margin: 0 auto;
+				padding: 0;
+				float: none;
+			}
+
+			aside {
+				margin: 0 auto;
+				padding: 20px;
+				float: none;
+			}
+
+		}
+
+		@media only screen and (min-width: 100px) and (max-width: 860px) {
+
+			.date-wrap {
+				float: none;
+				max-width: none;
+				margin: 0 10px 0 0;
+			}
+
+			.date-wrap li {
+				border-bottom: 0 !important;
+			}
+
+			.article-wrap {
+				float: none;
+			}
+
+			.article-meta {
+				max-width: 720px;
+				width: 100%;
+				margin: 0 auto;
+				padding: 10px;
+				float: none;
+			}
+
+		}
 
 		.site-content {
 			background-color: {color:Blog Content};
@@ -372,7 +421,7 @@
 						<div class="photoset">
 						    <div class="photoset-grid" data-layout="{PhotosetLayout}">
 						        {block:Photos}
-						            <img src="{PhotoURL-500}" {block:Caption}alt="{Caption}"{/block:Caption} />
+						            <img src="{PhotoURL-500}" {block:Caption}alt="{Caption}"{/block:Caption}>
 						        {/block:Photos}
 						    </div>
 							{block:Caption}
@@ -660,7 +709,7 @@
 	        $(".video-player").fitVids();
 			$(".audio-embed").fitVids({ customSelector: "iframe[src^='http://w.soundcloud.com']"});
 			$('.photoset-grid').photosetGrid();
-			$('input, textarea').placeholder();
+			$('input').placeholder();
 		});
 	</script>
 	
