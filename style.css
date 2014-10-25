@@ -227,12 +227,6 @@
 
 		/* Post Type Styles */
 
-		.text, .chat, .post-caption {
-			max-width: 640px;
-			width: 100%;
-			padding: 25px 30px 30px 30px;
-		}
-
 		@media only screen and (min-width: 100px) and (max-width: 860px) {
 
 			.text, .chat, .post-caption {
