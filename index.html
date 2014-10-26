@@ -2,7 +2,6 @@
 <html lang="{block:English}en{/block:English}{block:French}fr{/block:French}{block:German}de{/block:German}{block:Japanese}ja{/block:Japanese}{block:Italian}it{/block:Italian}{block:Spanish}es{/block:Spanish}{block:Polish}pl{/block:Polish}">
 <head>
 	<!-- 
-	
 	          ,      .      
 	._ _ *._ -+-   _.|_ *._ 
 	[ | )|[ ) |   (_.[ )|[_)
@@ -11,7 +10,9 @@
 	tumblr theme by			themes.little-town.net
 	normalize.css			necolas.github.io/normalize.css
 	fluid videos plugin		fitvidsjs.com
-
+	photoset grid 			stylehatch.github.io/photoset-grid
+	placeholder plugin 		github.com/mathiasbynens/jquery-placeholder
+	
 	Feel free to edit and customize this theme for personal use. 
 	Redistribution or sale of this theme is strictly prohibited. Mint Chip is free forever!
 	For further questions, please contact me at http://little-town.net/contact
@@ -136,10 +137,6 @@
 		}
 
 		{block:IfHeaderImageImage}
-
-			#site-title span {
-				display: none;
-			}
 
 			#site-title img {
 				border: 0;
@@ -347,7 +344,9 @@
 	<header>
 		<h1 id="site-title" class="accent-font">
 			<a href="{BlogURL}">
-				<span>{Title}</span>
+				{block:IfNotHeaderImageImage}
+					<span>{Title}</span>
+				{/block:IfNotHeaderImageImage}	
 				{block:IfHeaderImageImage}
 					<img src="{image:Header Image}" />
 				{/block:IfHeaderImageImage}
